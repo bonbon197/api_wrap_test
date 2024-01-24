@@ -9,4 +9,6 @@ class GamesControllerTest < ActionDispatch::IntegrationTest
     get games_url
     assert_response :success
   end
+
+  
 end

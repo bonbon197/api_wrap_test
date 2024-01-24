@@ -2,8 +2,8 @@ require 'httparty'
 
 module Rawgio
     class Client
-        include HttpStatusCodes
-        include ApiExceptions
+        # include HttpStatusCodes
+        # include ApiExceptions
 
         include HTTParty
         base_uri 'https://api.rawg.io/api/'
