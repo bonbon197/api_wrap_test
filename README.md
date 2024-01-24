@@ -1,24 +1,11 @@
-# README
+# Basic API Wrapper exercise
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This basic app literally only queries for one entry, and only for one endpoint, which is /game/{id}
 
-Things you may want to cover:
+The Token/Key that authenticates the request also only lives in the controller itself, not in the env file. This will be rectified at a later date.
 
-* Ruby version
+The app also utilizes the HTTParty gem to make things easier, and to consolidate the request and client classes into a single class.
 
-* System dependencies
+Error handling has not been fully implemented, but the groundwork has been laid.
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Will be improved at a later date, but basic querying capabilities are there.
