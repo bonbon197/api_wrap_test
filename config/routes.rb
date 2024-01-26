@@ -10,6 +10,7 @@ Rails.application.routes.draw do
 
  
   root "games#index"
+  
   get "/:slug" => "games#index"
   
   resources :games, only: [:index]
