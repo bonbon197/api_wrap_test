@@ -9,3 +9,11 @@ The app also utilizes the HTTParty gem to make things easier, and to consolidate
 Error handling has not been fully implemented, but the groundwork has been laid.
 
 Will be improved at a later date, but basic querying capabilities are there.
+
+# Endpoints
+
+- GET /
+Queries to the external rawg.io api and returns the details of all the games currently in rawg's database
+
+- GET /:slug
+Query to the endpoint using the provided slug, returns the details fetched from rawg's database for the corresponding game slug

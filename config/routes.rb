@@ -7,7 +7,10 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
-  root "games#index"
 
+ 
+  root "games#index"
+  get "/:slug" => "games#index"
+  
   resources :games, only: [:index]
 end

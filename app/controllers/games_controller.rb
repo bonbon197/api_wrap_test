@@ -5,11 +5,16 @@ class GamesController < ApplicationController
 
     def index
         api = Rawgio::Client.new(KEY)
-        @games = api.games
-        @game = api.game('blue-archive')
 
-        # return me a json response
-        render json: @game, status: :ok
+        if params[:slug].nil?
+            @games = api.games
+            render json: @games, status: :ok
+        else
+            @game = api.game(params[:slug])
+            render json: @game, status: :ok
+        end
+
+
     end
     
 end
